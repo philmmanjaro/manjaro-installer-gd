@@ -30,8 +30,8 @@ help: ## Display this help.
 
 
 .PHONY: build
-build: build/chimeraos-installer.x86_64 ## Build and export the project
-build/chimeraos-installer.x86_64: $(PROJECT_FILES) $(EXPORT_TEMPLATE)
+build: build/manjaro-installer.x86_64 ## Build and export the project
+build/manjaro-installer.x86_64: $(PROJECT_FILES) $(EXPORT_TEMPLATE)
 	mkdir -p build
 	$(GODOT) --headless --export-debug "Linux/X11"
 
